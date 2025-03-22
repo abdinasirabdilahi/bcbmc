@@ -2,9 +2,12 @@
 
 Vulnerability 1: Spoofed User
 
-Save and compile: acode.c, gcc acode.c -o acode
-Run and redirect: ./acode > output.txt
-Sort and count: cat output.txt | tr ' ' '\n' | sort | uniq -c | sort -nr > sorted_output.txt
+*Save and compile: acode.c, gcc acode.c -o acode
+
+*Run and redirect: ./acode > output.txt
+
+*Sort the output: 
+- cat output.txt | tr ' ' '\n' | sort | uniq -c | sort -nr > sorted_output.txt
 - This will generate 10,000 auth codes and save them to sorted_output.txt, sorted by frequency.
 
 Run the python script: python/python3 script.py
